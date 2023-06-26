@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <span class="emoji"> ☀️</span> Weather Search
+        <span class="emoji"> 🌙</span>
+      </h1>
+      <form class="new-city-search" id="new-city-search">
+        <input
+          type="text"
+          id="search-city"
+          placeholder="Search new city here"
+        />
+        <input type="submit" class="btn btn-primary" />
+        <button type="button" class="btn btn-light" id="current-location">
+          current location
+        </button>
+      </form>
+      <div class="todays-temp headliner">
+        <span class="city-search"></span>
+      </div>
+      <div class="todays-temp">
+        <span id="todays-temp"> </span>
+        <a href="#" class="fahrenheit"> °F</a> |
+        <a href="#" class="celsius"> °C</a>
+      </div>
+      <div class="weather-condition"></div>
+      <div class="todays-humidity"></div>
+      <div class="todays-wind"></div>
+      <div class="current-time-date">
+        <span class="current-day"></span>
+        <span class="current-time"></span>
+      </div>
+      <div class="row">
+        <div class="col weather-emoji">🌧️</div>
+        <div class="col temp">81°F / 73°F</div>
+        <div class="col weekday">Wednesday</div>
+      </div>
+      <div class="row">
+        <div class="col weather-emoji">🌧️</div>
+        <div class="col temp">83°F / 71°F</div>
+        <div class="col weekday">Thursday</div>
+      </div>
+      <div class="row">
+        <div class="col weather-emoji">🌧️</div>
+        <div class="col temp">82°F / 73°F</div>
+        <div class="col weekday">Friday</div>
+      </div>
+      <div class="row">
+        <div class="col weather-emoji">🌤️</div>
+        <div class="col temp">85°F / 74°F</div>
+        <div class="col weekday">Saturday</div>
+      </div>
+      <div class="row">
+        <div class="col weather-emoji">🌧️</div>
+        <div class="col temp">82°F / 73°F</div>
+        <div class="col weekday">Sunday</div>
+      </div>
+      <div class="row">
+        <div class="col weather-emoji">🌧️</div>
+        <div class="col temp">83°F / 72°F</div>
+        <div class="col weekday">Monday</div>
+      </div>
+      <div class="row">
+        <div class="col weather-emoji">🌤️</div>
+        <div class="col temp">83°F / 72°F</div>
+        <div class="col weekday">Tuesday</div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

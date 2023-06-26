@@ -1,0 +1,50 @@
+body {
+  background-color: #edcfa9;
+  font-family: "Amatic SC", cursive;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  line-height: 60px;
+  color: #aa4a30;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.new-city-search {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.todays-temp,
+.weather-condition,
+.todays-humidity,
+.todays-wind {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #e89f71;
+}
+.current-time-date {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #aa4a30;
+}
+
+.weather-emoji,
+.temp,
+.weekday {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 35px;
+  color: #d57149;
+  padding: 15px 0;
+}
+
+.emoji {
+  font-size: 40px;
+}
