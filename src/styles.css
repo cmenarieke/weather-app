@@ -18,6 +18,11 @@ h1 {
   font-size: 30px;
 }
 
+.developer {
+  text-align: center;
+  font-size: 25px;
+}
+
 .todays-temp,
 .weather-condition,
 .todays-humidity,
